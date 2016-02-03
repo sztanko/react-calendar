@@ -1,0 +1,140 @@
+$cellColor: #EEEEEE;
+
+//rgb(217,239,139);
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu{
+    //border: 1px solid black;
+    text-align: right;
+    width: 200px;
+    float: right;
+    padding-top: 5px;
+    ul{
+        margin: 0px;
+        padding: 0px;
+    li{
+        display: inline-block;
+        padding-left: 20px;
+        margin: 0px;
+        a{
+            color: Grey;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+    }
+}
+}
+
+.control {
+    height: 20px;
+    border-bottom: 1px dotted #CCC;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;    
+    .aggregators {
+        display: inline-block;
+        //width: 40%;
+        a {
+            margin-left: 10px;
+            padding-left: 3px;
+            padding-right: 3px;
+            border-left: 1px dotted #eee;
+            color: grey;
+            text-decoration: none;
+        }
+    }
+    input{
+        margin-left: 50px;
+    }
+}
+
+.calendar {
+    //height: 600px;
+    width: 450px;
+    //overflow-y: scroll;
+    rect {
+        stroke: white;
+        fill: $cellColor;
+        &.today {
+            stroke: red;
+            //stroke-width: 0.5;
+       
+        }
+        &:hover {
+            fill: darken($cellColor, 50%);
+            stroke: black;
+            stroke-width: 1;
+        }
+    }
+    .month_border {
+        fill: none;
+        stroke: #444;
+        stroke-width: 0.9;
+        pointer-events: disabled;
+    }
+}
+
+.dashboard {
+    position: absolute;
+    left: 480px;
+    font-size: 0.5em;
+    height: 340px;
+    border: 1px dashed #eee;
+    padding: 3px;
+    width: 500px;
+    p {
+        padding: 5px;
+        font-size: 2em;
+        font-weight: bold;
+        color: darkgrey;
+        width: 100%;
+    }
+    table th {
+        text-align: left;
+    }
+    .metrics {
+        display: inline-block;
+        width: 45%;
+        border-left: 1px solid #eee;
+        padding-left: 5px;
+        vertical-align: top;
+    }
+    .items {
+        vertical-align: top;
+        display: inline-block;
+        width: 70%;
+        max-height: 300px;
+        overflow-y: scroll;
+        border-left: 1px solid #eee;
+        padding-left: 5px;
+        th {
+            min-width: 200px;
+        }
+    }
+}
+
+.barGraph{
+    .innerGraph{
+        stroke: black;
+        stroke-width: 2px;
+    }
+    .axis{
+        text{
+         font-size: 8px;
+        }
+        path{
+            stroke: black;
+            fill: none;
+        }
+        .tick{
+            line{
+                stroke: #CCC;
+                stroke-dasharray: 1 2;
+            }
+        }
+    }
+}

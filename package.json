@@ -1,0 +1,30 @@
+{
+  "name": "react-calendar",
+  "version": "1.0.0",
+  "description": "A simple react component to render a calendar. Used for data visualisations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sztanko/react-calendar.git"
+  },
+  "keywords": [
+    "react",
+    "calendar",
+    "d3"
+  ],
+  "author": "Demeter Sztanko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sztanko/react-calendar/issues"
+  },
+  "homepage": "https://github.com/sztanko/react-calendar#readme",
+  "devDependencies": {
+    "classnames": "^2.2.3",
+    "lodash": "^4.2.0",
+    "moment": "^2.11.1",
+    "react": "^0.14.7"
+  }
+}
